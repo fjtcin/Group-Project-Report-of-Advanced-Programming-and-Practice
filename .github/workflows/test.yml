@@ -16,5 +16,3 @@ jobs:
       run: make main
     - name: Test doc
       run: make doc
-    - name: l3build check
-      run: make test
