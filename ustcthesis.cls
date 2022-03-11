@@ -1641,10 +1641,10 @@
     name    = author@en,
   },
   speciality = {
-    default = {专业},
+    default = {赵奕\quad 鲍政廷},
   },
   speciality* = {
-    default = {Speciality},
+    default = {Zhao Yi, Bao Zhengting},
     name    = speciality@en,
   },
   supervisor = {
@@ -1710,7 +1710,7 @@
   \ifnum\c@ustc@count>1\relax
     Supervisors:%
   \else
-    Supervisor:%
+    Group leader:%
   \fi
   \space\ustc@clist@use{\ustc@supervisor@en}{, }%
 }
@@ -1781,8 +1781,8 @@
 
 % 定义一些常量。
 \ifustc@degree@doctor
-  \newcommand\ustc@thesis@name{博士学位论文}
-  \newcommand\ustc@thesis@name@en{A dissertation for doctor's degree}
+  \newcommand\ustc@thesis@name{工程项目报告}
+  \newcommand\ustc@thesis@name@en{Report of Engineering Practicing Project}
 \else
   \ifustc@degree@master
     \newcommand\ustc@thesis@name{硕士学位论文}
@@ -1793,7 +1793,7 @@
   \fi
 \fi
 \ifustc@degree@type@academic
-  \newcommand\ustc@speciality@name{学科专业}
+  \newcommand\ustc@speciality@name{其他组员}
 \else
   \ifustc@degree@doctor
     \renewcommand\ustc@thesis@name{专业博士学位论文}
@@ -1889,7 +1889,7 @@
         \textsf{作者姓名：} & \ustc@author \\
         \textsf{\ustc@speciality@name：} & \ustc@speciality \\
         \ifx\ustc@advisor\@empty
-          \textsf{导师姓名：} & \ustc@supervisor@names \\
+          \textsf{组长姓名：} & \ustc@supervisor@names \\
         \else
           \textsf{校内导师：} & \ustc@supervisor@names \\
           \textsf{企业导师：} & \ustc@advisor@names \\
@@ -1939,8 +1939,8 @@
     \vskip 1.6cm%
     {\fontsize{16bp}{30bp}\selectfont
       \begin{tabular}{@{}l@{}}%
-        Author:        \ustc@author@en \\
-        Speciality:    \ustc@speciality@en \\
+        Authors:        \ustc@author@en \\
+        Other members:    \ustc@speciality@en \\
         \ustc@supervisor@en@line \\
         \ifx\ustc@advisor\@empty
         \else
