@@ -7,9 +7,12 @@
 \usepackage{graphicx}
 \usepackage{booktabs}
 \usepackage{tabularx}
-\usepackage{hhline}
+\usepackage{enumitem}
+\usepackage{lmodern}
+% \usepackage{placeins}
+% \usepackage{hhline}
 \usepackage{ctex}
-\usepackage{biblatex}
+% \usepackage{biblatex}
 \usepackage{hyperref}
 
 \newcolumntype{A}{>{\centering\arraybackslash}X}
@@ -17,9 +20,9 @@
 \definecolor{mydarkblue}{rgb}{0,0.08,0.45}
 \hypersetup{%
   pdftitle={“大雾实验工具”的开发},
-  pdfauthor={张学涵, 鲍政廷},
+  pdfauthor={张学涵},
   pdfsubject={《程序设计进阶与实践》大作业报告},
-  pdfkeywords={大物实验, 工具箱开发, 程序设计, 团队协作, Python},
+  pdfkeywords={大物实验, 程序设计, 团队协作, Python},
   pdfborder=0 0 0,
   pdfpagemode=UseNone,
   colorlinks=true,
@@ -31,7 +34,7 @@
 \title{%
 “大雾实验工具”的开发\\
 \large《程序设计进阶与实践》大作业报告}
-\setlength{\droptitle}{-2.2in}
+\setlength{\droptitle}{-1.2in}
 \posttitle{\par\end{center}\vspace{-0.2in}}
 \preauthor{}
 \postauthor{}
@@ -39,13 +42,13 @@
 \predate{}
 \postdate{}
 \date{}
-\addbibresource{main.bib}
+% \addbibresource{main.bib}
 
 \begin{document}
 
 \twocolumn[\maketitle
 \input{content/meta.tex}
-\vskip 1em]
+\vskip\baselineskip]
 \input{content/analysis.tex}
 \input{content/design.tex}
 \input{content/testing.tex}
@@ -53,7 +56,7 @@
 \input{content/collaboration.tex}
 \input{content/conclusion.tex}
 \input{content/reference.tex}
-\printbibliography[title=参考文献]
-\input{content/appendix.tex}
+% \printbibliography[title=参考文献]
+% \input{content/appendix.tex}
 
 \end{document}
